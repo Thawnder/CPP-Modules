@@ -1,7 +1,8 @@
 MAKEFLAGS = --silent
 
-NAME = megaphone
-SRC = megaphone.cpp
+NAME = phonebook
+SRC = phonebook.cpp
+INCLUDE = phonebook.hpp
 OBJ = ${SRC:.cpp=.o}
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
@@ -10,7 +11,7 @@ all: ${NAME}
 		echo "\033[1;34m~| All files updated ! |~\033[0m"\
 
 ${NAME}: ${OBJ}
-	${CC} ${FLAGS} ${OBJ} -o ${NAME} \
+	${CC} ${FLAGS} ${INCLUDE} ${OBJ} -o ${NAME} \
 			&& echo "\033[1;36m~| $@ compilation: OK |~\033[0m"\
             || echo "\033[0;31m~| $@ compilation: Error |~\033[0m"
 
