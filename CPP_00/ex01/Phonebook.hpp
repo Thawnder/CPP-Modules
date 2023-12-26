@@ -7,12 +7,11 @@ class Phonebook
 {
 private:
 	Contact list[8];
-	void Phonebook::Add();
-	void Phonebook::Search();
-	void Phonebook::Exit();
 public:
 	Phonebook();
 	~Phonebook();
+	void Phonebook::Add();
+	void Phonebook::Search();
 };
 
 Phonebook::Phonebook(){}
