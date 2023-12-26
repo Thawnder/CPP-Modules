@@ -14,8 +14,12 @@ int main(void)
 		if (cmd == "ADD")
 			pb.Add();
 		else if (cmd == "SEARCH")
-			pb.Search();
+			pb.Search(pb);
 		else if (cmd == "EXIT")
 			break;
+		else if (cmd.empty())
+			continue;
+		else
+			std::cout << "Invalid command." << std::endl;
 	}
 }

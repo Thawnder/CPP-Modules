@@ -10,13 +10,8 @@ private:
 public:
 	Phonebook();
 	~Phonebook();
-	void Phonebook::Add();
-	void Phonebook::Search();
+	void Add();
+	void Search(Phonebook pb);
 };
-
-Phonebook::Phonebook(){}
-
-Phonebook::~Phonebook(){}
-
 
 #endif

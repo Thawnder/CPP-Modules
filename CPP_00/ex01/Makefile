@@ -1,11 +1,11 @@
 MAKEFLAGS = --silent
 
 NAME = phonebook
-SRC = phonebook.cpp
-INCLUDE = phonebook.hpp
+SRC = Phonebook.cpp Contact.cpp main.cpp
+INCLUDE = Phonebook.hpp Contact.hpp
 OBJ = ${SRC:.cpp=.o}
 CC = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 all: ${NAME}
 		echo "\033[1;34m~| All files updated ! |~\033[0m"\
