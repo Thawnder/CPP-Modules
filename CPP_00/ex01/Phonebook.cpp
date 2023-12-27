@@ -20,8 +20,8 @@ void Phonebook::Add()
         	confirm.erase(confirm.find_last_not_of(" \t\v\r\f") + 1, confirm[confirm.length() - 1]);
 			if (confirm == "Y" || confirm == "Yes" || confirm == "y" || confirm == "yes")
 			{
-				break;
 				i--;
+				break;
 			}
 			else if (confirm == "N" || confirm == "No" || confirm == "n" || confirm == "no")
 				return ;
