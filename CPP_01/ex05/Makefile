@@ -1,7 +1,7 @@
 MAKEFLAGS = --silent
 
-NAME = account
-SRC = Account.cpp tests.cpp
+NAME = harl
+SRC = main.cpp Harl.cpp
 OBJ = ${SRC:.cpp=.o}
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98 -g
