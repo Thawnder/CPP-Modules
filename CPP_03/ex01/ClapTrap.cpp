@@ -14,7 +14,7 @@ ClapTrap::ClapTrap(ClapTrap const & base) {
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "ClapTrap destructor called" << std::endl;
+	std::cout << "ClapTrap destructor called" << std::endl << std::endl;
 }
 
 ClapTrap& 	ClapTrap::operator=(ClapTrap const & base) {

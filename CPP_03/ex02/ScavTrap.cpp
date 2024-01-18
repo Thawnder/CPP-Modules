@@ -1,21 +1,21 @@
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(): ClapTrap(){
-	std::cout << "ScavTrap default constructor called" << std::endl;
+	std::cout << "ScavTrap default constructor called" << std::endl << std::endl;
 	this->_hp = 100;
 	this->_ep = 50;
 	this->_atk = 20;
 }
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
-	std::cout << "ScavTrap string constructor called" << std::endl;
+	std::cout << "ScavTrap string constructor called" << std::endl << std::endl;
 	this->_hp = 100;
 	this->_ep = 50;
 	this->_atk = 20;
 }
 
 ScavTrap::ScavTrap(ScavTrap const & base) {
-	std::cout << "ScavTrap copy constructor called" << std::endl;
+	std::cout << "ScavTrap copy constructor called" << std::endl << std::endl;
 	*this = base;
 }
 
@@ -24,7 +24,7 @@ ScavTrap::~ScavTrap() {
 }
 
 ScavTrap& 	ScavTrap::operator=(ScavTrap const & base) {
-	std::cout << "ClapTrap copy assignment operator called" << std::endl;
+	std::cout << "ScavTrap copy assignment operator called" << std::endl;
 	if (this != &base)
 	{
 		this->_name = base.getName();
