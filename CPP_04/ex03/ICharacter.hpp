@@ -3,20 +3,12 @@
 
 # include "AMateria.hpp"
 
+class AMateria;
+
 class ICharacter
 {
-	protected:
-		std::string _name;
-		AMateria *inv[4];
-
 	public:
-		ICharacter();
-		ICharacter(std::string name);
-		ICharacter(ICharacter const & base);
-		virtual ~ICharacter() {}
-
-		ICharacter & operator=(ICharacter const & base);
-
+		virtual ~ICharacter() {};
 		virtual std::string const & getName() const = 0;
 		virtual void equip(AMateria* m) = 0;
 		virtual void unequip(int idx) = 0;

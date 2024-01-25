@@ -5,8 +5,6 @@
 
 class IMateriaSource
 {
-	protected:
-		AMateria *tab[4];
 	public:
 		virtual ~IMateriaSource() {}
 		virtual void learnMateria(AMateria*) = 0;

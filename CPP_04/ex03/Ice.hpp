@@ -3,17 +3,19 @@
 
 # include "AMateria.hpp"
 
-class Ice
+class Ice: public AMateria
 {
 	private:
 
 	public:
 		Ice();
-		Ice(std::string const & type);
 		Ice(Ice const & base);
 		~Ice();
 
 		Ice & operator=(Ice const & base);
+
+		AMateria* clone() const;
+		void use(ICharacter& target);
 };
 
 #endif
