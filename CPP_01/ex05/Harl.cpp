@@ -1,6 +1,15 @@
 #include "Harl.hpp"
 
-Harl::Harl(){}
+Harl::Harl(){
+	str[0] = "DEBUG";
+	str[1] = "INFO";
+	str[2] = "WARNING";
+	str[3] ="ERROR";
+	lvl[0] = &Harl::_debug;
+	lvl[1] = &Harl::_info;
+	lvl[2] = &Harl::_warning;
+	lvl[3] = &Harl::_error;
+}
 
 Harl::~Harl(){}
 

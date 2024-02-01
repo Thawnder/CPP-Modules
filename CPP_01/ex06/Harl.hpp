@@ -17,7 +17,7 @@ class Harl
 	public:
 		Harl();
 		~Harl();
-		std::string str[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+		std::string str[4];
 		void complain(std::string level);
 };
 

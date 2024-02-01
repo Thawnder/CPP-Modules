@@ -9,22 +9,22 @@
 
 class Contact
 {
-private:
+	private:
 
-public:
-	Contact();
-	~Contact();
+	public:
+		Contact();
+		~Contact();
 
-	Contact(int i);
-	std::string first_name;
-	std::string last_name;
-	std::string nickname;
-	std::string phone_nb;
-	std::string dark_secret;
+		Contact(int i);
+		std::string first_name;
+		std::string last_name;
+		std::string nickname;
+		std::string phone_nb;
+		std::string dark_secret;
 
-	void AddContact();
-	void PrintNames(Contact contact, int i);
-	void PrintInfo(Contact contact);
+		void AddContact();
+		void PrintNames(Contact contact, int i);
+		void PrintInfo(Contact contact);
 };
 
 #endif

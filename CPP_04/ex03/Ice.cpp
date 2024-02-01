@@ -5,7 +5,7 @@ Ice::Ice(): AMateria("ice") {
 		std::cout << "Ice default constructor called" << std::endl;
 }
 
-Ice::Ice(Ice const & base) {
+Ice::Ice(Ice const & base): AMateria(base) {
 	if (DEBUG)
 		std::cout << "Ice copy constructor called" << std::endl;
 	*this = base;

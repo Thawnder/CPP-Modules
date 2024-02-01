@@ -36,5 +36,5 @@ std::string const & AMateria::getType() const {
 }
 
 void AMateria::use(ICharacter& target) {
-	std::cout << "TF you doing bruh" << std::endl;
+	std::cout << "TF you doing bruh? Ain't nothing wrong with " << target.getName() << ", you're the wrong one !" << std::endl;
 }

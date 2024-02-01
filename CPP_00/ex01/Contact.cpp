@@ -1,14 +1,13 @@
 #include "Contact.hpp"
 
-Contact::Contact(void){
-}
-
-Contact::Contact(int i)
-{
-	AddContact();
-}
+Contact::Contact(void){}
 
 Contact::~Contact(void){}
+
+Contact::Contact(int i){
+	(void) i;
+	AddContact();
+}
 
 void Contact::AddContact(){
 	std::cout << std::endl;

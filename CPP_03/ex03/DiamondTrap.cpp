@@ -13,7 +13,7 @@ DiamondTrap::DiamondTrap(std::string name) {
 	this->_atk = FragTrap::_atk;
 }
 
-DiamondTrap::DiamondTrap(DiamondTrap const & base) {
+DiamondTrap::DiamondTrap(DiamondTrap const & base): ClapTrap(base), ScavTrap(base), FragTrap(base) {
 	std::cout << "DiamondTrap copy constructor called" << std::endl << std::endl;
 	*this = base;
 }

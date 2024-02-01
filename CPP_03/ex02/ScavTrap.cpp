@@ -14,7 +14,7 @@ ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
 	this->_atk = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const & base) {
+ScavTrap::ScavTrap(ScavTrap const & base): ClapTrap(base) {
 	std::cout << "ScavTrap copy constructor called" << std::endl << std::endl;
 	*this = base;
 }

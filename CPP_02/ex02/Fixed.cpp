@@ -45,7 +45,7 @@ Fixed & Fixed::operator++() {
 	return *this;
 }
 
-Fixed Fixed::operator++(int val) {
+Fixed Fixed::operator++(int) {
 	Fixed tmp(*this);
 	this->_pt++;
 	return tmp;
@@ -56,7 +56,7 @@ Fixed & Fixed::operator--() {
 	return *this;
 }
 
-Fixed Fixed::operator--(int val) {
+Fixed Fixed::operator--(int) {
 	Fixed tmp(*this);
 	this->_pt--;
 	return tmp;

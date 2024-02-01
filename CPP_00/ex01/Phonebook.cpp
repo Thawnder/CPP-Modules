@@ -9,7 +9,7 @@ void Phonebook::Add()
 	int	i;
 	std::string confirm;
 	
-	for (i = 0; i < 8 && list[i].first_name[0]; i++);
+	for (i = 0; i < 8 && _list[i].first_name[0]; i++);
 	if (i == 8)
 	{
 		std::cout << "Warning. Maximum number of contacts reached." << std::endl << "Proceeding with this command with erase the oldest contact." << std::endl << "Do you want to proceed?" << std::endl;
@@ -29,9 +29,9 @@ void Phonebook::Add()
 				std::cout << "I don't understand. Do you want to proceed ?" << std::endl << "(Y/N/Yes/No) (Uppercase not required)" << std::endl;
 		}
 	}
-	for (i; i > 0; i--)
-		list[i] = list[i - 1];
-	list[0] = Contact(1);
+	for (i = i; i > 0; i--)
+		_list[i] = _list[i - 1];
+	_list[0] = Contact(i);
 }
 
 void Phonebook::Search(Phonebook pb)
@@ -41,7 +41,7 @@ void Phonebook::Search(Phonebook pb)
     std::string index;
 
     i = 0;
-    if (pb.list[0].first_name.empty())
+    if (pb._list[0].first_name.empty())
     {
         std::cout << "There is nothing to search for, your phonebook is empty." << std::endl;
         return ;
@@ -52,14 +52,14 @@ void Phonebook::Search(Phonebook pb)
     std::cout << "|-------------------------------------------|" << std::endl;
     while (i < 8)
     {
-        if (pb.list[i].first_name.empty())
+        if (pb._list[i].first_name.empty())
             break ;
         std::cout << "|" << std::setw(10) << i << "|";
-        list[i].PrintNames(list[i], 1);
+        _list[i].PrintNames(_list[i], 1);
         std::cout << "|";
-        list[i].PrintNames(list[i], 2);
+        _list[i].PrintNames(_list[i], 2);
         std::cout << "|";
-        list[i].PrintNames(list[i], 3);
+        _list[i].PrintNames(_list[i], 3);
         std::cout << "|\n";
         std::cout << "|-------------------------------------------|" << std::endl;
         i++;
@@ -80,7 +80,7 @@ void Phonebook::Search(Phonebook pb)
             std::cout << "Invalid contact index." << std::endl;
             continue;
         }
-        pb.list[i].PrintInfo(pb.list[i]);
+        pb._list[i].PrintInfo(pb._list[i]);
         break ;
     }
 }

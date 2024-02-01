@@ -1,6 +1,11 @@
 #include "Harl.hpp"
 
-Harl::Harl(){}
+Harl::Harl(){
+	str[0] = "DEBUG";
+	str[1] = "INFO";
+	str[2] = "WARNING";
+	str[3] ="ERROR";
+}
 
 Harl::~Harl(){}
 
@@ -42,17 +47,23 @@ void Harl::complain(std::string level)
 	{
 		case 0:
 			_debug();
-			i++;
+			_info();
+			_warning();
+			_error();
+			break;
 		case 1:
 			_info();
-			i++;
+			_warning();
+			_error();
+			break;
 		case 2:
 			_warning();
-			i++;
+			_error();
+			break;
 		case 3:
 			_error();
-			i++;
+			break;
 		default:
-			break;	
+			break;
 	}
 }

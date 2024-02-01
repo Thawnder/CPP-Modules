@@ -5,13 +5,13 @@
 
 class Phonebook
 {
-private:
-	Contact list[8];
-public:
-	Phonebook();
-	~Phonebook();
-	void Add();
-	void Search(Phonebook pb);
+	private:
+		Contact _list[8];
+	public:
+		Phonebook();
+		~Phonebook();
+		void Add();
+		void Search(Phonebook pb);
 };
 
 #endif
