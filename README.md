@@ -8,7 +8,7 @@
 Introduction to the basics of C++ programming language, including data types, variables, operators, control structures, and functions.
 
 ### Module 01 - Memory Allocation (100/100)
-Exploration of memory allocation in C++, covering stack vs. heap memory, dynamic memory allocation with `new` and `delete`, and smart pointers.
+Exploration of memory allocation in C++, covering stack vs. heap memory and dynamic memory allocation with `new` and `delete`.
 
 ### Module 02 - Classes (100/100)
 Introduction to classes and object-oriented programming (OOP) concepts, including encapsulation, inheritance, polymorphism, constructors, and destructors.
