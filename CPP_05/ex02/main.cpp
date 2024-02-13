@@ -21,6 +21,8 @@ int main(void)
 	timmy.signForm(two);
 	timmy.executeForm(tri);
 	elon.executeForm(tri);
+	elon.signForm(tri);
+	elon.executeForm(tri);
 	elon.signForm(two);
 	elon.signForm(one);
 	adolf.executeForm(two);

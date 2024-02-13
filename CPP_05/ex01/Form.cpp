@@ -55,7 +55,7 @@ int Form::getExecGrade() const {
 	return this->_execGrade;
 }
 
-void Form::beSigned(Bureaucrat signer) {
+void Form::beSigned(Bureaucrat & signer) {
 	if (signer.getGrade() <= this->getSignGrade())
 		this->_isSigned = true;
 	else

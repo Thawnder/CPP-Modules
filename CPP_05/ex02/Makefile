@@ -21,7 +21,7 @@ ${NAME}: ${OBJ}
             || echo "\033[0;31m~| $@ compilation: Error |~\033[0m"
 
 clean:
-	rm -rf ${OBJ} \
+	rm -rf ${OBJ} *_shrubbery \
 			&& echo "\033[1;35m~| Object files cleaning : OK |~\033[0m"\
             || echo "\033[0;31m~| Object files cleaning : Error |~\033[0m"
 
