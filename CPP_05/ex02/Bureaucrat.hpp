@@ -5,7 +5,6 @@
 # include <cstdlib>
 # include <cstring>
 # include <fstream>
-# include "Bureaucrat.hpp"
 # include "AForm.hpp"
 
 class AForm;
