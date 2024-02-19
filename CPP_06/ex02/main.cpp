@@ -2,7 +2,6 @@
 #include "B.hpp"
 #include "C.hpp"
 #include <cstdlib>
-#include <typeinfo>
 
 Base * generate(void) {
 	srand(time(NULL));
@@ -39,19 +38,19 @@ void identify(Base& p) {
 		A& test = dynamic_cast<A&>(p);
 		(void) test;
 		std::cout << "Type: A" << std::endl;
-	} catch (std::bad_cast &e){}
+	} catch (std::exception &e){}
 
 	try {
 		B& test = dynamic_cast<B&>(p);
 		(void) test;
 		std::cout << "Type: B" << std::endl;
-	} catch (const std::bad_cast &e){}
+	} catch (const std::exception &e){}
 
 	try {
 		C& test = dynamic_cast<C&>(p);
 		(void) test;
 		std::cout << "Type: C" << std::endl;
-	} catch (const std::bad_cast &e){}
+	} catch (const std::exception &e){}
 }
 
 int main(void)
