@@ -19,17 +19,17 @@ Deep dive into inheritance in C++, covering single inheritance, multiple inherit
 ### Module 04 - Subtype Polymorphism (100/100)
 Understanding subtype polymorphism through virtual functions, pure virtual functions, abstract classes, and dynamic polymorphism using pointers and references.
 
-### Module 05 - Ad-hoc Polymorphism (WIP)
+### Module 05 - Ad-hoc Polymorphism (100/100)
 Exploration of ad-hoc polymorphism, also known as function overloading and operator overloading, to create more expressive and concise code.
 
-### Module 06 - Exceptions (WIP)
+### Module 06 - Exceptions (100/100)
 Introduction to exception handling in C++, including try-catch blocks, throw statements, exception specifications, and RAII (Resource Acquisition Is Initialization) principles.
 
-### Module 07 - Templates (WIP)
+### Module 07 - Templates (100/100)
 Understanding template programming in C++, including function templates, class templates, template specialization, and template metaprogramming.
 
-### Module 08 - Standard Template Library (STL) (WIP)
+### Module 08 - Standard Template Library (STL) (100/100)
 Exploration of the Standard Template Library (STL) in C++, covering containers (vectors, lists, maps, etc.), iterators, algorithms, and function objects.
 
-### Module 09 - Advanced Topics (WIP)
+### Module 09 - Advanced Topics (100/100)
 Advanced topics in C++ programming, including move semantics, copy semantics, lambda expressions, rvalue references, and perfect forwarding.
