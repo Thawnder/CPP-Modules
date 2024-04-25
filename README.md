@@ -8,13 +8,13 @@
 Introduction to the basics of C++ programming language, including data types, variables, operators, control structures, and functions.
 
 ### Module 01 - Memory Allocation (100/100)
-Exploration of memory allocation in C++, covering stack vs. heap memory and dynamic memory allocation with `new` and `delete`.
+Exploration of memory allocation, covering stack vs. heap memory and dynamic memory allocation with `new` and `delete`.
 
 ### Module 02 - Classes (100/100)
 Introduction to classes and object-oriented programming (OOP) concepts, including encapsulation, inheritance, polymorphism, constructors, and destructors.
 
 ### Module 03 - Inheritance (100/100)
-Deep dive into inheritance in C++, covering single inheritance, multiple inheritance, virtual inheritance, and the use of access specifiers.
+Deep dive into inheritance, covering single inheritance, multiple inheritance, virtual inheritance, and the use of access specifiers.
 
 ### Module 04 - Subtype Polymorphism (100/100)
 Understanding subtype polymorphism through virtual functions, pure virtual functions, abstract classes, and dynamic polymorphism using pointers and references.
@@ -23,13 +23,13 @@ Understanding subtype polymorphism through virtual functions, pure virtual funct
 Exploration of ad-hoc polymorphism, also known as function overloading and operator overloading, to create more expressive and concise code.
 
 ### Module 06 - Exceptions (100/100)
-Introduction to exception handling in C++, including try-catch blocks, throw statements, exception specifications, and RAII (Resource Acquisition Is Initialization) principles.
+Introduction to exception handling, including try-catch blocks, throw statements, exception specifications, and RAII (Resource Acquisition Is Initialization) principles.
 
 ### Module 07 - Templates (100/100)
-Understanding template programming in C++, including function templates, class templates, template specialization, and template metaprogramming.
+Understanding template programming, including function templates, class templates, template specialization, and template metaprogramming.
 
 ### Module 08 - Standard Template Library (STL) (100/100)
-Exploration of the Standard Template Library (STL) in C++, covering containers (vectors, lists, maps, etc.), iterators, algorithms, and function objects.
+Exploration of the Standard Template Library (STL), covering containers (vectors, lists, maps, etc.), iterators, algorithms, and function objects.
 
 ### Module 09 - Advanced Topics (100/100)
-Advanced topics in C++ programming, including move semantics, copy semantics, lambda expressions, rvalue references, and perfect forwarding.
+Advanced containers exercises; reading and comparing values from a data file with a fixed format, Reverse Polish Notation (RPN) expressions, and value sorting in a container.
